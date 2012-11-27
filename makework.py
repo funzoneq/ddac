@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from tasks import available
 
 results = {}
