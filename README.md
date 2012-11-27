@@ -14,7 +14,7 @@ yum -y install python-pip python-dns.noarch python-celery.noarch screen<br />
 ## Starting the deamons
 
 <blockquote>
-/etc/init.d/rabbitmq-server start
-cd ~/ddac
-for i in {1..5}; do screen -dmS celery$i celery -A tasks worker --loglevel=info; done
+/etc/init.d/rabbitmq-server start<br />
+cd ~/ddac<br />
+for i in {1..5}; do screen -dmS celery$i celery -A tasks worker --loglevel=info; done<br />
 </blockquote>
