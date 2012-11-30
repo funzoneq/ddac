@@ -1,7 +1,7 @@
 from celery import Celery
 import dns.resolver
 
-celery = Celery('tasks', backend='redis://localhost', broker='amqp://')
+celery = Celery('tasks', backend='amqp', broker='amqp://')
 
 @celery.task
 def available (domain, tld):
